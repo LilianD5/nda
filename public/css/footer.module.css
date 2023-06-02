@@ -1,0 +1,71 @@
+.footer {
+    max-height: 250px;
+    background-image: url(../assets/footer-bg.svg);
+    background-size: cover;
+    width: 100vw;
+}
+
+.rowLimitSize {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.bottom {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.bottom > a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.bottom > a:hover {
+    color: var(--third);
+}
+
+.leftPart {
+    position: relative;
+    top: 0;
+    width: 75%;
+}
+
+.rightPart{
+    padding-top: 15px;
+}
+
+.rightPart > p {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.files {
+    width: 100px;
+    display: block;
+    float: right;
+    padding-top: 15px;
+}
+
+.contactWrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 15px;
+}
+
+.logo {
+    width: 30px;
+}
+
+.contact {
+    padding-left: 15px;
+    line-height: 30px;
+}

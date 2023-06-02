@@ -16,7 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color: var(--secondary);
 	vertical-align: baseline;
+	font-family: 'Raleway';
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,4 +42,15 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+:root {
+    --primary: #001026;
+    --secondary: #fff;
+	--third: #004EB8;
 }
