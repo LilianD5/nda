@@ -1,5 +1,4 @@
 .footer {
-    max-height: 250px;
     background-image: url(../assets/footer-bg.svg);
     background-size: cover;
     width: 100vw;
@@ -17,7 +16,7 @@
 }
 
 .bottom {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -33,9 +32,7 @@
 }
 
 .leftPart {
-    position: relative;
-    top: 0;
-    width: 75%;
+    width: 100%;
 }
 
 .rightPart{
@@ -49,7 +46,9 @@
 }
 
 .files {
-    width: 100px;
+    width: 12vw;
+    max-width: 100px;
+    min-width: 50px;
     display: block;
     float: right;
     padding-top: 15px;
@@ -68,4 +67,94 @@
 .contact {
     padding-left: 15px;
     line-height: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .rightPart > p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .bottom {
+        width: 60%;
+    }
+
+    .bottom > a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .top {
+        flex-direction: column-reverse;
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .rightPart {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-top: 0;
+    }
+
+    .rightPart > p {
+        text-align: left;
+        line-height: 30px;
+        padding-left: 15px;
+    }
+    
+    .files {
+        width: 30px;
+        min-width: 30px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .bottom {
+        width: 100%;
+    }
+
+    .rightPart {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .leftPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightPart > p {
+        padding-left: 0;
+        padding-top: 5px;
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .contact {
+        padding-left: 0;
+        line-height: 18px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    .files {
+        float: unset;
+    }
 }
