@@ -12,11 +12,12 @@
 
 .rowLimitSize {
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .list {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -27,7 +28,7 @@
     line-height: 80px;
     text-transform: capitalize;
     padding: 0 10px;
-    font-size: large;
+    font-size: 2.5vw;
 }
 
 .li > a:hover {
@@ -36,4 +37,51 @@
 
 .logo {
     padding: 8px 0;
+}
+
+.burgerIcon {
+    padding: 20px 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.none {
+    display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .list {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .li > a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .list {
+        width: 80%;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary);
+        z-index: 900;
+        margin-top: 80px;
+    }
+
+    .li > a {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .openIcon {
+        display: block;
+    }
 }
