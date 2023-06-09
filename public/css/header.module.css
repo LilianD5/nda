@@ -49,6 +49,10 @@
     display: none !important;
 }
 
+.openIcon, .closeIcon {
+    display: none;
+}
+
 @media screen and (min-width: 1200px) {
     .list {
         width: 70%;
@@ -75,13 +79,17 @@
         margin-top: 80px;
     }
 
+    .listNone {
+        display: none;
+    }
+
     .li > a {
         font-size: 20px;
         display: flex;
         justify-content: center;
     }
 
-    .openIcon {
+    .openIcon, .closeIcon {
         display: block;
     }
 }
