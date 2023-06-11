@@ -89,7 +89,7 @@
         justify-content: center;
     }
 
-    .openIcon, .closeIcon {
+    .openIcon {
         display: block;
     }
 }

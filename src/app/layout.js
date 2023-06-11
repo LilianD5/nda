@@ -1,6 +1,7 @@
-import HeaderLayout from "./header"
-import FooterLayout from "./footer"
+import HeaderLayout from "./templates/header"
+import FooterLayout from "./templates/footer"
 import '../../public/css/global.css'
+import styles from '../../public/css/background.module.css'
 
 export const metadata = {
   title: 'Nathalie Diaz Assistanat',
@@ -12,7 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <HeaderLayout/>
-        {children}
+          <main className={styles.background}>
+            {children}
+          </main>
         <FooterLayout/>
       </body>
     </html>

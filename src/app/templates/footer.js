@@ -1,6 +1,5 @@
 import React from "react"
-import styles from "../../public/css/footer.module.css"
-import Image from "next/image"
+import styles from "../../../public/css/footer.module.css"
 import Link from "next/link"
 
 export default function FooterLayout() {
@@ -20,7 +19,7 @@ export default function FooterLayout() {
                             </div>
                         </div>
                         <div className={styles.rightPart}>
-                            <p>assistante administrative et commerciale indépendante</p>
+                            <h3>assistante administrative et commerciale indépendante</h3>
                             <img className={styles.files} src="/assets/files-icon.svg" alt="Logo de fichiers" />
                         </div>
                     </div>

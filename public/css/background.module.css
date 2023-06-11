@@ -1,0 +1,10 @@
+.background {
+    background: url('../assets/logo-bw.png') no-repeat center center fixed;
+}
+
+@media screen and (max-width: 600px) {
+    .background {
+        background-size: 90%;
+    }
+}
+

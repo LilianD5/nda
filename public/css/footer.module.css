@@ -17,6 +17,7 @@
 
 .bottom {
     width: 70%;
+    max-width: 700px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -39,7 +40,7 @@
     padding-top: 15px;
 }
 
-.rightPart > p {
+.rightPart > p, .rightPart > h3 {
     text-align: right;
     text-transform: uppercase;
     font-weight: 600;
@@ -70,7 +71,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .rightPart > p {
+    .rightPart > p, .rightPart > h3 {
         font-size: 12px;
         line-height: 15px;
     }
@@ -103,7 +104,7 @@
         padding-top: 0;
     }
 
-    .rightPart > p {
+    .rightPart > p, .rightPart > h3 {
         text-align: left;
         line-height: 30px;
         padding-left: 15px;
@@ -140,7 +141,7 @@
         align-items: center;
     }
 
-    .rightPart > p {
+    .rightPart > p, .rightPart > h3 {
         padding-left: 0;
         padding-top: 5px;
         text-align: center;
